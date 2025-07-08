@@ -8,7 +8,7 @@ This project analyzes the inventory and sales data of Mint Classics, a company c
 The analysis is based on the `mintclassics` relational database, which contains tables such as `products`, `warehouses`, `orderdetails`, and more.
 
 ## SQL Scripts Included
-All SQL queries used in this project are saved in [`2 mint_classics_project_queries.sql`](./2 mint_classics_project_queries.sql):
+All SQL queries used in this project are saved in [`2 mint_classics_project_queries.sql`](./2mint_classics_project_queries.sql):
 - Total stock by warehouse
 - Sales volume by warehouse
 - Top 10 best-selling products
