@@ -1,4 +1,4 @@
--- Query 1: Total Stock by Warehouse
+ Query 1: Total Stock by Warehouse
 SELECT 
   warehouseCode, 
   SUM(quantityInStock) AS totalStock 
@@ -6,7 +6,7 @@ FROM products
 GROUP BY warehouseCode 
 ORDER BY totalStock DESC;
 
--- Query 2: Total Sales Volume by Warehouse
+ Query 2: Total Sales Volume by Warehouse
 SELECT 
   p.warehouseCode,
   SUM(od.quantityOrdered) AS totalQuantity
@@ -15,7 +15,7 @@ JOIN orderdetails od ON p.productCode = od.productCode
 GROUP BY p.warehouseCode
 ORDER BY totalQuantity DESC;
 
--- Query 3: Top 10 Best-Selling Products
+ Query 3: Top 10 Best-Selling Products
 SELECT 
   p.productCode,
   p.productName,
@@ -26,7 +26,7 @@ GROUP BY p.productCode, p.productName
 ORDER BY totalSold DESC
 LIMIT 10;
 
--- Query 4: Bottom 10 Worst-Selling Products
+ Query 4: Bottom 10 Worst-Selling Products
 SELECT 
   p.productCode,
   p.productName,
@@ -37,7 +37,7 @@ GROUP BY p.productCode, p.productName
 ORDER BY totalSold ASC
 LIMIT 10;
 
--- Query 5: Worst-Selling Products with Warehouse Info
+ Query 5: Worst-Selling Products with Warehouse Info
 SELECT 
   p.productCode,
   p.productName,
@@ -49,7 +49,7 @@ GROUP BY p.productCode, p.productName, p.warehouseCode
 ORDER BY totalSold ASC
 LIMIT 10;
 
--- Query 6: Simulate 5% Inventory Reduction
+ Query 6: Simulate 5% Inventory Reduction
 SELECT 
   productCode,
   productName,
