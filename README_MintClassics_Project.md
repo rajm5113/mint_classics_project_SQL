@@ -40,5 +40,4 @@ Simulated reducing inventory by 5% across all products. Results showed:
 ---
 
  **Submitted for**: Coursera SQL Capstone Project  
- **Author**: Raj Mishra  
- **Portfolio**: _[Add your link here if you host it online]_  
+ **Author**: Raj Mishra  _  
